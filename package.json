@@ -1,0 +1,13 @@
+{
+  "name": "interviewiq-root",
+  "version": "1.0.0",
+  "description": "Root package.json for concurrently running client and server",
+  "scripts": {
+    "install-all": "npm install --prefix client && npm install --prefix server",
+    "dev": "concurrently \"npm run dev --prefix client\" \"npm run dev --prefix server\"",
+    "build": "npm run build --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
