@@ -20,7 +20,7 @@ if (!fs.existsSync(publicDir)) {
 
 const app = express()
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin:"https://interviewiq-ai-client-q3ln.onrender.com",
     credentials:true
 }))
 
